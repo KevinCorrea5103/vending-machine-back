@@ -1,0 +1,45 @@
+Vending Machine Server
+Este repositorio contiene el código del servidor Node.js para una máquina expendedora. El servidor maneja las operaciones de inserción de monedas, devolución de monedas, consulta de inventario y compra de artículos.
+
+Funcionalidades
+Insertar Moneda: Incrementa el contador de monedas.
+Devolver Monedas: Devuelve todas las monedas insertadas.
+Consultar Inventario: Obtiene el inventario completo de la máquina.
+Consultar Inventario de Artículo: Obtiene la cantidad disponible de un artículo específico.
+Comprar Artículo: Permite al usuario comprar un artículo, reduciendo su cantidad en el inventario y devolviendo el cambio (si aplica).
+Endpoints
+1. POST /api/v1/vending/insert-coin
+Incrementa el contador de monedas en la máquina.
+
+2. POST /api/v1/vending/return-coins
+Devuelve todas las monedas insertadas en la máquina.
+
+3. GET /api/v1/vending/inventory
+Obtiene el inventario completo de la máquina.
+
+4. GET /api/v1/vending/inventory/:item
+Obtiene la cantidad disponible de un artículo específico en el inventario.
+
+5. POST /api/v1/vending/purchase/:item
+Permite al usuario comprar un artículo. Reduce la cantidad disponible en el inventario y devuelve el cambio (si aplica).
+
+
+Configuración
+
+
+
+Clona el repositorio:
+
+
+git clone https://github.com/tu-usuario/vending-machine-server.git
+
+
+Instala las dependencias:
+
+cd vending-machine-server
+npm install
+
+
+Ejecuta el servidor:
+
+npm start
